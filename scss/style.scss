@@ -56,18 +56,7 @@
 	}
 	&__main-btn{
 		padding: 19px 58px;
-		border: 2px solid #2D9CDB;
-		border-radius: 33px;
-		color: #2D9CDB;
-		display: inline-block;
 		margin-right: 40px;
-	}
-	&__main-link{
-		font-size: 24px;
-		line-height: 28px;
-		color: #333333;
-		padding-bottom: 10px;
-		border-bottom: 2px solid #2D9CDB;
 	}
 }
 .advantage{
@@ -142,5 +131,63 @@
 		}
 	}
 }
-
+.pride{
+	padding-bottom: 110px;
+	&__title{
+		margin-bottom: 20px;
+	}
+	&__items{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+	&__item{
+		width: 715px;
+		margin: 8px;
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+		background-color: #f2f2f2;
+		border-radius: 2px;
+		padding: 60px 0 0 45px;
+	}
+	&__item-title{
+		font-size: 25px;
+		background-image: linear-gradient(87.82deg, #D72828 4.27%, #EE7D14 84.56%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+		margin-bottom: 20px;
+	}
+	&__item-description{
+		font-size: 30px;
+		line-height: 35px;
+		color: #828282;
+		margin-bottom: 50px;
+	}
+}
+.services{
+	&__item{
+		display: flex;
+		margin-bottom: 50px;
+		&:first-child{
+			max-width: 930px;
+		}
+	}
+	&__item-title{
+		color: #000;
+		font-weight: 500;
+		font-size: 40px;
+		margin-bottom: 10px;
+		line-height: 100%;
+	}
+	&__item-text{
+		font-size: 25px;
+		line-height: 34px;
+		margin-bottom: 40px;
+		color: #828282;
+	}
+	&__item-btn{
+		padding: 20px 75px;
+		margin-right: 45px;
+	}
+}
 @import 'media';

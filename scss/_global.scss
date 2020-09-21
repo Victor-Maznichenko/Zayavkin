@@ -69,3 +69,21 @@ body {
 	line-height: 30px;
 	color: #828282;
 }
+.btn, 
+.link{
+	display: inline-block;
+	font-size: 24px;
+	line-height: 28px;
+}
+.btn{
+	border: 2px solid #2D9CDB;
+	border-radius: 33px;
+	color: #2D9CDB;
+}
+.link{
+	font-size: 24px;
+	line-height: 28px;
+	color: #333333;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #2D9CDB;
+}
