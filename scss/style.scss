@@ -403,12 +403,15 @@
 }
 .course{
 	padding-bottom: 180px;
+	position: relative;
 	&__main{
 		display: flex;
 		justify-content: space-between;
+		min-height: 750px;
 	}
 	&__main-img{
-		margin-left: -150px;
+		position: absolute;
+		left: 0;
 	}
 	&__main-title{
 		margin-bottom: 10px;
@@ -416,8 +419,10 @@
 		font-size: 60px;
 	}
 	&__main-info{
-		margin-left: 65px;
+		margin-left: auto;
+		margin-right: 0;
 		padding-top: 20px;
+		max-width: 870px;
 	}
 	&__main-description{
 		font-family: 'Segoe Script', sans-serif;
