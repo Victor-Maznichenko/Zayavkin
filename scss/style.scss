@@ -8,6 +8,7 @@
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center top;
+	position: relative;
 	height: 100vh;
 	padding-bottom: 180px;
 	&__top{
@@ -167,11 +168,11 @@
 .services{
 	padding-bottom: 115px;
 	position: relative;
-	&__item-info{
-		padding-bottom: 100px;
-	}
 	&__items{
 		margin-bottom: 180px;
+	}
+	&__item-img{
+		position: absolute;
 	}
 	&__item{
 		display: flex;
@@ -182,22 +183,27 @@
 		}
 		&:nth-child(even){
 			.services__item-img{
-				margin-left: -150px;
+				left: 0;
 			}
 		}
 		&:nth-child(odd){
 			.services__item-img{
-				margin-right: -150px;
-				margin-left: auto;
+				right: 0;
 			}
 		}
 		&:nth-child(2){
+			min-height: 1200px;
 			.services__item-info{
-				margin-left: -200px;
-				padding-bottom: 300px;
+				margin-left: auto;
+				margin-top: 350px;
+				margin-bottom: auto;	
+				margin-right: 0;
+				max-width: 750px;
+				
 			}
 		}
 		&:nth-child(3){
+			min-height: 880px;
 			margin-top: -220px;
 			.services__item-info{
 				max-width: 725px;
@@ -205,12 +211,14 @@
 		}
 		&:nth-child(4){
 			margin-top: -80px;
+			min-height: 600px;
 			.services__item-info{
-				margin-left: 60px;
+				margin-left: 525px;
 				max-width: 670px;
 			}
 		}
 		&:nth-child(5){
+			min-height: 1080px;
 			margin-top: -160px;
 			.services__item-info{
 				max-width: 725px;
@@ -218,11 +226,13 @@
 		}
 		&:nth-child(6){
 			margin-top: -300px;
+			min-height: 370px;
 			margin-bottom: 0;
 			.services__item-info{
 				padding-bottom: 0;
 				margin-bottom: -140px;
-				margin-left: 210px;
+				margin-left: auto;
+				margin-right: 100px;
 				max-width: 800px;
 			}
 		}
