@@ -1,0 +1,146 @@
+@import 'libs';
+@import 'fonts';
+@import 'vars';
+@import 'global';
+
+.header{
+	color: #fff;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 100vh;
+	padding-bottom: 180px;
+	&__top{
+		padding: 24px 0 20px;
+		margin-bottom: 240px;
+	}
+	&__top,
+	&__top-start{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__logo{
+		margin-right: 75px;
+	}
+	&__menu-item{
+		display: inline-block;
+		&+&{
+			margin-left: 50px;
+		}
+	}
+	&__menu-link{
+		font-size: 16px;
+		line-height: 19px;
+	}
+	&__btn{
+		font-size: 14px;
+		line-height: 16px;
+		padding: 14px 12px;
+		background: linear-gradient(84.32deg, #D72828 -25.29%, #EE7D14 95.55%);
+		border-radius: 30px;
+	}
+	&__title{
+		font-weight: 700;
+		font-size: 80px;
+		line-height: 94px;
+		max-width: 900px;
+		margin-bottom: 40px;
+		span{
+			color: #000;
+		}
+	}
+	&__main-btns{
+		font-size: 24px;
+		line-height: 28px;
+	}
+	&__main-btn{
+		padding: 19px 58px;
+		border: 2px solid #2D9CDB;
+		border-radius: 33px;
+		color: #2D9CDB;
+		display: inline-block;
+		margin-right: 40px;
+	}
+	&__main-link{
+		font-size: 24px;
+		line-height: 28px;
+		color: #333333;
+		padding-bottom: 10px;
+		border-bottom: 2px solid #2D9CDB;
+	}
+}
+.advantage{
+	text-align: center;
+	padding-bottom: 130px;
+	&__title{
+		margin-bottom: 20px;
+		max-width: 1400px;
+		display: inline-block;
+	}
+	&__text{
+		max-width: 740px;
+		display: inline-block;
+	}
+}
+.skills{
+	padding: 130px 0 135px;
+	&__title{
+		margin: 0 370px 35px 0;
+		text-align: right;
+	}
+	&__inner{
+		color: #4F4F4F;
+	}
+	&__top{
+		text-align: right;
+		justify-content: center;
+		.skills__description{
+			max-width: 890px;
+			margin-left: 53px;
+		}
+	}
+	&__center{
+		justify-content: space-between;
+		text-align: center;
+		margin-bottom: 75px;
+		svg{
+			display: inline-block;
+		}
+		.skills__description p{
+			max-width: 370px;
+			margin-bottom: 90px;
+		}
+	}
+	&__top,
+	&__center,
+	&__bottom{
+		display: flex;
+		align-items: center;
+	}
+	&__description{
+		font-family: 'Segoe Script', sans-serif;
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 124%;
+		display: inline-block;
+	}
+	&__bottom{
+		.skills__description{
+			display: flex;
+			align-items: center;
+			svg{
+				display: inline-block;
+			}
+			p{
+				max-width: 515px;
+				margin-right: 120px;
+			}
+			&:first-child{
+				margin-right: 200px;
+			}
+		}
+	}
+}
+
+@import 'media';
