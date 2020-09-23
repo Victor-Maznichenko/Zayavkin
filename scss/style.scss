@@ -32,6 +32,11 @@
 	&__menu-link{
 		font-size: 16px;
 		line-height: 19px;
+		border-bottom: 1px solid transparent;
+		transition: all .3s;
+		&:hover{
+			border-bottom: 1px solid #fff;
+		}
 	}
 	&__menu-btn{
 		display: none;
@@ -45,6 +50,10 @@
 		padding: 14px 12px;
 		background: linear-gradient(84.32deg, #D72828 -25.29%, #EE7D14 95.55%);
 		border-radius: 30px;
+		transition: all .3s;
+		&:hover{
+			box-shadow: 0 0 10px rgba(#f7490a, 0.8);
+		}
 	}
 	&__title{
 		font-weight: 700;
@@ -416,6 +425,11 @@
 		border-radius: 33px;
 		color: #27AE60;
 		margin-top: 45px;
+		transition: all .3s;
+		&:hover{
+			background-color: #27AE60;
+			color: #fff;
+		}
 	}
 }
 .advice{
