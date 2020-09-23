@@ -27,28 +27,25 @@
 	.header__top{
 		margin-bottom: 205px;
 	}
+	.services__item-left-img {
+		position: absolute;
+		left: 0;
+	}
+	.services__item-right,
+	.services__item-left{
+		max-width: 50%;
+	}
+	.services__item-right-images{
+		position: absolute;
+		right: 0;
+	}
+	.services__item-left-info{
+		margin-top: 680px;
+	}
 }
 @media (max-width: 1780px) {
 	.header__top {
 		margin-bottom: 178px;
-	}
-}
-@media (max-width: 1680px) {
-	.header__top {
-		margin-bottom: 150px;
-	}
-}
-@media (max-width: 1580px) {
-	.header__top {
-		margin-bottom: 120px;
-	}
-}
-@media (max-width: 1475px) {
-	.header__top {
-		margin-bottom: 90px;
-	}
-	.pride__item {
-		width: 645px;
 	}
 }
 @media (max-width: 1700px) {
@@ -70,6 +67,54 @@
 		max-width: 50%;
 	}
 } 
+@media (max-width: 1680px) {
+	.header__top {
+		margin-bottom: 150px;
+	}
+}
+@media (max-width: 1580px) {
+	.header__top {
+		margin-bottom: 120px;
+	}
+}
+@media (max-width: 1475px) {
+	.header__top {
+		margin-bottom: 90px;
+	}
+	.pride__item {
+		width: 645px;
+	}
+	.services__item-left-img{
+		width: 60%;
+	}
+	.services__item-right-images{
+		max-width: 40%;
+	}
+	.services__item-right-img{
+		width: auto;
+		&:first-child{
+			img{
+				width: 100%;
+
+			}
+		}
+		&:last-child{
+			img{
+				width: 60%;
+			}
+		}
+	}
+	.services__item-left-info {
+		width: auto;
+		max-width: 100%;
+	}
+	.answers__item{
+		&::before,
+		&::after{
+			display: none;
+		}
+	}
+}
 @media (max-width: 1440px) {
 	.skills__inner{
 		display: flex;
@@ -116,6 +161,21 @@
 	.services__item-btn {
 		padding: 20px 55px;
 		margin-right: 14px;	
+	}
+	.answers__items-center{
+		flex-direction: column;
+		min-height: auto;
+		align-items: center;
+	}
+	.answers__item-text{
+		display: inline-block;
+	}
+	.answers__items{
+		flex-direction: column;
+		text-align: center;
+	}
+	.answers__items-center .answers__item:first-child{
+		margin-right: 0;
 	}
 }
 @media (max-width: 1366px) {
@@ -184,6 +244,15 @@
 	.services__item-title{
 		font-size: 36px;
 	}
+	.answers__item-description{
+		font-size: 32px;
+	}
+	.services {
+		padding-bottom: 65px;
+	}
+	.answers {
+		padding: 75px 0 125px;
+	}
 }
 @media (max-width: 1300px) {
 	.header__top {
@@ -230,7 +299,16 @@
 	.skills__bottom .skills__description+.skills__description{
 		margin-top: 35px;
 	}
-
+	.services__item-left-info{
+		padding-top: 0;
+	}
+	.answers__item-description {
+		font-size: 28px;
+	}
+	.answers__item-btn {
+		font-size: 17px;
+		margin-top: 35px;
+	}
 }
 @media (max-width: 1130px) {
 	.header__top {
@@ -245,6 +323,9 @@
 	}
 	.services__item:nth-child(4) .services__item-info {
 		margin-left: 560px;
+	}
+	.services__item-left-info {
+		margin-top: 600px;
 	}
 }
 @media (max-width: 1060px) {
@@ -292,7 +373,7 @@
 		display: none;
 	}
 	.services .services__item .services__item-info{
-		max-width: auto;
+		max-width: 100%;
 		margin-left: 0;
 		margin-right: auto;	
 	}
@@ -314,6 +395,15 @@
 	}
 	.services__item+.services__item{
 		margin-top: 100px;
+	}
+	.services__item-left-info {
+		margin-top: 520px;
+	}
+	.answers {
+		padding: 40px 0 125px;
+	}
+	.services {
+		padding-bottom: 40px;
 	}
 }
 @media (max-width: 870px) {
@@ -347,6 +437,11 @@
 	.pride__item{
 		max-width: 100%;
 		width: 100%;
+	}
+	.answers__item-description {
+		font-size: 23px;
+		margin-bottom: 5px;
+		line-height: 100%;
 	}
 }
 @media (max-width: 815px){
@@ -450,6 +545,28 @@
 	.skills__title {
 		margin: 0 20px 35px 0;
 	}
+	.services__item-left-info {
+		margin-top: 420px;
+	}
+	.services__item-right-descr {
+		padding-top: 40px;
+	}
+	.services__item-btn {
+		padding: 17px 50px;
+	}
+}
+@media (max-width: 700px) {
+	.services__item-left-img,
+	.services__item-right-images{
+		display: none;
+	}
+	.services__items-big{
+		padding-top: 50px;
+		flex-direction: column;
+	}
+	.services__item-left-info{
+		margin: 0;
+	}
 }
 @media (max-width: 600px) {
 	.btn, .link {
@@ -488,6 +605,15 @@
 	.skills__description {
 		font-size: 16px;
 	}
+	.services__item-right, .services__item-left {
+		max-width: 100%;
+	}
+	.answers {
+		padding: 35px 0 125px;
+	}
+	.services {
+		padding-bottom: 35px;
+	}
 }
 @media (max-width: 450px){
 	.header__main-btn{
@@ -501,6 +627,16 @@
 	}
 	.header__top{
 		margin-bottom: 360px;
+	}
+}
+@media (max-width: 400px) {
+	.services__item-btn{
+		margin: 0;
+		margin-bottom: 30px;
+		display: block;
+	}
+	.services__item-btns{
+		text-align: center;
 	}
 }
 @media (max-width: 375px) {
